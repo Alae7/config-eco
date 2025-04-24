@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: product-service
+
+product:
+  params:
+    xx: 40
+    yy: 30
