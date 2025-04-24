@@ -2,26 +2,24 @@ spring:
   application:
     name: product-service
 
+  datasource:
+    username: postgres
+    password: alae.2001
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/product_db
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
 product:
   params:
     xx: 40
     yy: 30
-
-datasource:
-  username: postgres
-  password: alae.2001
-  driver-class-name: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/product_db
-
-  jpa:
-    generate-ddl: true
-
-    hibernate:
-      ddl-auto: update
-
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 server:
   port: 8999
