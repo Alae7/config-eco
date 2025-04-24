@@ -4,7 +4,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://localhost:27017/eCommerce  # MongoDB URI for connecting
+      uri: mongodb://localhost:27017/ecommerce  # MongoDB URI for connecting
 notification:
   params:
     a: 1

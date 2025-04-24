@@ -4,9 +4,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://localhost:27017/customer_db   # MongoDB URI for connecting
-      username: your_mongo_username                # Optional if authentication is required
-      password: your_mongo_password                # Optional if authentication is required
+      uri: mongodb://localhost:27017/ecommerce
 
 customer:
   params:
