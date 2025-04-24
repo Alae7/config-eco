@@ -7,7 +7,12 @@ spring:
   cloud:
     discovery:
       enabled: true
+
     config:
+      enabled: true
+
+    zipkin:
+      base-url: http://localhost:9411
       enabled: true
 
 management:
@@ -15,6 +20,12 @@ management:
     web:
       exposure:
         include: "*"
+
+  tracing:
+    sampling:
+      probability: 1.0  # Trace all requests
+
+
 
 eureka:
   instance:

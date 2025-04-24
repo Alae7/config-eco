@@ -2,6 +2,10 @@ spring:
   application:
     name: product-service
 
+  zipkin:
+    service:
+      name: product-service
+
   datasource:
     username: postgres
     password: alae.2001
