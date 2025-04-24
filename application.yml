@@ -2,25 +2,23 @@ global:
   params:
     p1: 99
     p2: 88
-# pour Discovery
+
 spring:
   cloud:
     discovery:
       enabled: true
-# pour config
     config:
       enabled: true
-#pour Actuator
+
 management:
   endpoints:
     web:
       exposure:
-        include: *
-# mieux les adresses IP
+        include: "*"
+
 eureka:
   instance:
     prefer-ip-address: true
-#pour le serveur eureka server
   client:
     service-url:
       defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
