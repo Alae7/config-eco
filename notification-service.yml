@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: notification-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/eCommerce  # MongoDB URI for connecting
+notification:
+  params:
+    a: 1
+    e: 3
+
+server:
+  port: 9002

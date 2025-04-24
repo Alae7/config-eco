@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: customer-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/customer_db   # MongoDB URI for connecting
+      username: your_mongo_username                # Optional if authentication is required
+      password: your_mongo_password                # Optional if authentication is required
+
+customer:
+  params:
+    x: 40
+    y: 30
+
+server:
+  port: 9000

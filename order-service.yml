@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: order-service
+
+  datasource:
+    username: postgres
+    password: alae.2001
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/order_db
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+order:
+  params:
+    a: 40
+    e: 30
+
+server:
+  port: 9001

@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: payment-service
+
+  datasource:
+    username: postgres
+    password: alae.2001
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/payment_db
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+payment:
+  params:
+    a: 50
+    e: 66
+
+server:
+  port: 9003
