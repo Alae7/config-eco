@@ -9,6 +9,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/ecommerce
+      database: customer
+
 
 customer:
   params:
